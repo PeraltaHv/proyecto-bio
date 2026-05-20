@@ -1,0 +1,52 @@
+// Este es tu archivo de configuración de Prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Modelo de Usuario (El dueño del BioLink)
+model User {
+  id           String   @id @default(cuid())
+  businessName String
+  slug         String   @unique
+  bio          String?
+  image        String?
+  
+  // AGREGÁ ESTAS LÍNEAS AQUÍ:
+  instagram    String?
+  facebook     String?
+  tiktok       String?
+  whatsapp     String?
+
+  bgImage      String?
+
+  nameColor    String?
+  bioColor    String?
+
+  bgColor      String   @default("#f8fafc")
+  buttonColor  String   @default("#2563eb")
+  textColor    String   @default("#ffffff")
+  links        Link[]
+
+  titleFont    String? @default("Inter") // Fuente para el título
+  bioFont      String? @default("Inter") // Fuente para la descripción
+
+  titleSize       String? @default("text-[30px]") 
+  bioSize         String? @default("text-base")
+}
+
+// Modelo de los Enlaces (Los botones que tendrá cada bio)
+model Link {
+  id        String   @id @default(cuid())
+  label     String   // Texto del botón: "WhatsApp"
+  url       String   // El link real
+  icon      String?  // Nombre del icono (lucide)
+  order     Int      @default(0)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
