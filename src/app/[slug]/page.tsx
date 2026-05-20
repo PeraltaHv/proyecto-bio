@@ -100,7 +100,7 @@ export default async function BioPage({ params }: { params: Promise<{ slug: stri
 
         {/* Links */}
         <div className="w-full flex flex-col gap-4">
-          {user.links.map((link) => (
+         {user.links.map((link: { id: string; icon: string | null; label: string; url: string; order: number; userId: string; }) => (
             <a
               key={link.id}
               href={link.url}
