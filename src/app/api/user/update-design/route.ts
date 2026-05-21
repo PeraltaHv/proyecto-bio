@@ -21,7 +21,7 @@ export async function PUT(req: Request) {
         bgColor: appearance?.bgColor,
         buttonColor: appearance?.btnColor,
         textColor: appearance?.btnTextColor,
-        bioTextColor: appearance?.bioTextColor,
+        bioColor: appearance?.bioTextColor,
         bgImage: appearance?.bgImage,
         nameColor: appearance?.nameColor,
        titleFont :appearance?.titleFont,
