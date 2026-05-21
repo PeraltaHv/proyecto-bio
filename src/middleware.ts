@@ -6,14 +6,12 @@ export default withAuth({
   },
 });
 
-// Especificamos ÚNICAMENTE las rutas que requieren que estés logueado
+// Especificamos ÚNICAMENTE las pantallas de la app que requieren sesión
 export const config = {
   matcher: [
     "/landing",
     "/landing/:path*",
     "/admin",
-    "/admin/:path*",
-    "/api/user/:path*",
-    "/api/links/:path*"
+    "/admin/:path*"
   ],
 };
