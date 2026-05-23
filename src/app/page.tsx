@@ -235,7 +235,7 @@ export default function Home() {
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50"
       >
         <img
-          src="https://res.cloudinary.com/dx8fseipi/image/upload/v1779508905/mockup-celular_3_ftvmrs.png"
+          src="https://res.cloudinary.com/dx8fseipi/image/upload/v1779508955/image1_fenqqi.png"
           alt="WhatsApp"
           className="w-8 h-8 object-contain"
         />
