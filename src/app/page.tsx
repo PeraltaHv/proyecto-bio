@@ -52,7 +52,7 @@ export default function Home() {
               className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:hover:to-emerald-700 transition-all duration-300 px-8 py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 shadow-lg"
             >
               <img
-                src="/images/whatsapp-logo.png"
+                src="https://res.cloudinary.com/dx8fseipi/image/upload/v1779508955/image1_fenqqi.png"
                 alt="WhatsApp"
                 className="w-6 h-6 object-contain"
               />
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="flex justify-center">
           <div className="w-[320px] h-[650px] rounded-[45px] shadow-2xl overflow-hidden relative">
             <img
-              src="/images/mockup-celular.png"
+              src="https://res.cloudinary.com/dx8fseipi/image/upload/v1779508905/mockup-celular_3_ftvmrs.png"
               alt="Vista previa del Bio Link"
               className="w-full h-full object-cover"
             />
